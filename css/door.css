@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+:root {
+
+    --main-color: #131921;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+
+
+
+}
+/* ---- Header settings are here -------- */
+
+
+/* left  */
+.light > .space0{
+    width: 100%;
+    height: 40px;
+    background: #232f3e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.light .space0 i{
+    color: orangered;
+    font-weight: 550;
+}
+.space0 span{
+    color: white;
+    font-weight: 600;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    background: #131921;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left{
+    width: 300px;
+    height: 100px;
+    padding:   0px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.header-left h1{
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+.header-left .span1{
+    color: orangered;
+
+}
+.header-left .span2{
+    font-size: 13px;
+    width: 1px;
+
+}
+
+
+
+
+/* middle */
+.header-middle{
+    width: 600px;
+    height: 100px;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-middle a{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    width: 100%;
+    height: 100px;
+    padding: 30px 60px;
+    transition: 0.3s ease;
+}
+.header-middle > .sales{
+    color: red;
+}
+.header-middle a:hover{
+    color: orangered;
+    border: 1px solid white;
+}
+.header-middle .active{
+    color: orangered;
+}
+
+
+
+
+/* right */
+.header-right{
+    width: 400px;
+    height: 100px;
+    padding: 30px 30px 30px 200px;
+    display: flex;
+    align-items: center;
+
+}
+.header-right .user{
+    width: 50%;
+    height: 100px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+/* cart */
+.header-right .bx-cart-alt{
+    color: white;
+    font-size: 48px;
+    width: 50%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.header-right .bx-cart-alt:hover{
+
+    color: orangered;
+}
+/* day - night mode */
+.header-right .mode{
+    width: 70px;
+    height: 25px;
+    display: flex;
+    margin-left: 40px;
+
+}
+.header-right .mode input{
+    display: none;
+}
+
+
+/* --------------------------------------- */
+
+/*container settings */
+
+
+.container{
+    width: 100%;
+    min-height: 140vh;
+    padding: 20px 50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 250px 250px 250px 250px ;
+    grid-template-rows: 500px 500px 500px;
+    row-gap: 60px;
+    column-gap: 110px;
+}
+
+.container div{
+    width: 250px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.container div img{
+    width: 100%;
+    height: 300px;
+    
+}
+
+.container div img:hover{
+    width: 300px;
+    height: 420px;
+    position: absolute;
+}
+
+.container h2:hover{
+    color: orangered;
+}
+
+.container div button{
+    color: black;
+    font-weight: 600;
+    font-size: 22px;
+    width: 250px;
+    height: 50px;
+    background-color:white;
+    transition: 0.2s ;
+}
+.container div button:hover{
+    color: white;
+
+    border: none;
+    background-color: #232f3e;
+}
+
+/* ---------------------------------------Openable photos */
+
+.openable{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(99, 98, 98,0.5);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.openable .photo1{
+    width: 700px;
+    height: 700px;
+    padding: 50px;
+    background-color: white;
+    position: relative;
+    box-shadow: 10px 10px 10px rgb(99, 98, 98),
+                -3px -3px 6px rgb(99, 98, 98);
+                overflow: hidden;
+}
+
+.openable .photo1 .photoInside{
+    float: left;
+    width: 50%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.openable .photo1 img{
+    float: left;
+    width: 190px;
+    height: 220px;
+}
+.openable .contain{
+    float: left;
+    width: 50%;
+    height: 300px;
+}
+.openable .information{
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+.openable .input{
+    float: left;
+    width: 50%;
+    height: 160px;
+    padding: 10px;
+}
+.openable .input input{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid #232f3e;
+    outline: none;
+
+}
+.photo1 .input .button{
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+    width: 100%;
+    height: 70px;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: orangered;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.photo1 .input .button:hover{
+    color: black;
+    border: 1px solid #232f3e;
+    background-color: white;
+}
+
+.photo1 .closer{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: orangered;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+}
+.checkoutComplete{
+    width: 700px;
+    height: 700px;
+    padding: 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    background-color: white;
+    position: relative;
+    box-shadow: 10px 10px 10px rgb(99, 98, 98),
+                -3px -3px 6px rgb(99, 98, 98);
+                overflow: hidden;
+}
+.checkoutComplete img{
+    width: 150px;
+    height: 150px;
+}
+.checkoutComplete .closePage{
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+    width: 100%;
+    height: 70px;
+    border: none;
+    background: orangered;
+    position: absolute;
+    bottom: 0;
+}
+.checkoutComplete .closerCheckout{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: orangered;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+}
+
+
+/* ----------------------------------------------------------------- */
+.space{
+    width: 100%;
+    height: 50px;
+    background-color: #232f3e;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 500px;
+}
+.space a{
+    color: white;
+    font-size: 19px;
+    font-weight: 500;
+    margin-right: 15px;
+}
+.space .activeMiniMenu{
+    color: orangered;
+    font-weight: 700;
+}
+
+
+
+
+
+
+/* ------------------------------------------ */
+
+
+/* footer settings */
+footer{
+    width: 100%;
+    height: 200px;
+    background: #131921;
+}
+
+
+/* -------------------------------------------- */
