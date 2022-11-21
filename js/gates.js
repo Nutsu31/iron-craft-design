@@ -65,23 +65,27 @@ checkout5.addEventListener('click', ()=> {
     openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/gates/gate5.png";
     document.getElementById('doorNumber').innerHTML = "Door #N605";
+    openable.style.transform = `translateY(${20}vw)`;
     photo1.style.display = "block";
 })
 checkout6.addEventListener('click', ()=> {
     openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/gates/gate6.png";
     document.getElementById('doorNumber').innerHTML = "Door #N606";
+    openable.style.transform = `translateY(${20}vw)`;
     photo1.style.display = "block";
 })
 checkout7.addEventListener('click', ()=> {
     openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/gates/gate7.png";
     document.getElementById('doorNumber').innerHTML = "Door #N607";
+    openable.style.transform = `translateY(${20}vw)`;
     photo1.style.display = "block";
 })
 checkout8.addEventListener('click', ()=> {
     openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/gates/gate8.png";
     document.getElementById('doorNumber').innerHTML = "Door #N608";
+    openable.style.transform = `translateY(${20}vw)`;
     photo1.style.display = "block";
 })
