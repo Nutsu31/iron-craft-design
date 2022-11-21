@@ -65,35 +65,41 @@ checkout5.addEventListener('click', ()=> {
     openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/model-5.png";
     document.getElementById('doorNumber').innerHTML = "Door #N505";
+    openable.style.transform = `translateY(${20}vw)`;
     photo1.style.display = "block";
 })
 checkout6.addEventListener('click', ()=> {
     openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/model-6.png";
     document.getElementById('doorNumber').innerHTML = "Door #N506";
+    openable.style.transform = `translateY(${20}vw)`;
     photo1.style.display = "block";
 })
 checkout7.addEventListener('click', ()=> {
     openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/model-7.png";
     document.getElementById('doorNumber').innerHTML = "Door #N507";
+    openable.style.transform = `translateY(${20}vw)`;
     photo1.style.display = "block";
 })
 checkout8.addEventListener('click', ()=> {
     openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/model-8.png";
     document.getElementById('doorNumber').innerHTML = "Door #N508";
+    openable.style.transform = `translateY(${20}vw)`;
     photo1.style.display = "block";
 })
 checkout9.addEventListener('click', ()=> {
     openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/model-9.png";
     document.getElementById('doorNumber').innerHTML = "Door #N509";
+    openable.style.transform = `translateY(${46}vw)`;
     photo1.style.display = "block";
 })
 checkout10.addEventListener('click', ()=> {
     openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/model-10.png";
     document.getElementById('doorNumber').innerHTML = "Door #N510";
+    openable.style.transform = `translateY(${46}vw)`;
     photo1.style.display = "block";
 })
