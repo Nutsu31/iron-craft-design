@@ -193,6 +193,10 @@ header{
 
 /* --------------------------------------- */
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 /* slide settings */
 
 .space{
@@ -271,10 +275,14 @@ nav{
     background-color: #131921;
 }
 .info a{
+    font-weight: 600;
     color: white;
     width: 150px;
     height: 50px;
     border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     background-color: orangered;
 }
@@ -320,102 +328,126 @@ section #mainMenu{
 .div6 { grid-area: 2 / 3 / 3 / 4; }
 
 .div1{
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
     text-align: center;
     transition: 0.3s ease-in-out;
+    background: #232f3e;
+    border-radius: 50%;
 }
 .div1:hover{
     color: orangered;
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
+    background-color: orangered;
 }
 .div1 img{
     width: 100%;
     height: 100%;
+    padding: 50px;
 }
 
 .div2{
-    width: 200px;
-    height: 200px;
     text-align: center;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background: #232f3e;
     transition: 0.3s ease-in-out;
 }
 .div2:hover{
     color: orangered;
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
+    background-color: orangered;
 }
 .div2 img{
     width: 100%;
     height: 100%;
+    padding: 50px;
 }
 
 .div3{
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
     text-align: center;
     transition: 0.3s ease-in-out;
+    border-radius: 50%;
+    background: #232f3e;
 }
 .div3:hover{
     color: orangered;
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
+    background-color: orangered;
 }
 .div3 img{
     width: 100%;
     height: 100%;
+    padding: 50px;
 }
 
 .div4{
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
     text-align: center;
     padding: 0 30px;
     transition: 0.3s ease-in-out;
+    border-radius: 50%;
+    background-color: #232f3e;
 }
 .div4:hover{
     color: orangered;
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
+    background-color: orangered;
 }
 .div4 img{
     width: 100%;
     height: 100%;
+    padding: 40px;
 }
 
 
 .div5{
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
     text-align: center;
     transition: 0.3s ease-in-out;
+    border-radius: 50%;
+    background: #232f3e;
 }
 .div5:hover{
     color: orangered;
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
+    background-color: orangered;
 }
 .div5 img{
     width: 100%;
     height: 100%;
+    padding: 50px;
 }
 
 
 .div6{
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
     text-align: center;
     transition: 0.3s ease-in-out;
+    border-radius: 50%;
+    background: #232f3e;
 }
 .div6:hover{
     color: orangered;
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
+    background-color: orangered;
 }
 .div6 img{
     width: 100%;
     height: 100%;
+    padding: 50px;
 }
 
 section div a{
