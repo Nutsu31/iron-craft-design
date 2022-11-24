@@ -72,25 +72,17 @@ header{
     justify-content: center;
     overflow: hidden;
 }
-.header-left h1{
-    color: white;
-    font-family: 'Kanit', sans-serif;
+.header-left a {
     width: 100%;
-    height: 100px;
-    padding: 10px 0;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
-.header-left .span1{
-    color: orangered;
+.header-left a img{
+    width: 50%;
+    height: 90%;
+}
 
-}
-.header-left .span2{
-    font-size: 13px;
-    width: 1px;
-
-}
 
 
 
