@@ -104,6 +104,9 @@ header{
     padding: 30px 60px;
     transition: 0.3s ease;
 }
+.header-middle button{
+    display: none;
+}
 .header-middle > .sales{
     color: red;
 }
