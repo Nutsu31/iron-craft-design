@@ -420,11 +420,6 @@ footer{
     header .header-left{
         justify-content: center;
     }
-    header .header-middle{
-        width: 44%;
-        justify-content: center;
-        align-items: center;
-    }
     
     .header-middle{
         display: none;
@@ -496,11 +491,11 @@ footer{
         display: inline-block;
     }
 
-    .smallbar a{
+    /* .smallbar a{
         color: white;
         font-size: 18px;
         font-weight: 500;
-    }
+    } */
 
     /* header ends here */
 
@@ -529,22 +524,37 @@ footer{
         .div6 { grid-area: 3 / 2 / 4 / 3; }
 }
 @media only screen and (max-width:630px) {
+    
+    
+    
     nav{
         padding: 30px 0;
     }
-    .info{
+
+    .slide .info{
+        width: fit-content;
         padding: 20px;
     }
+    .info h2{
+        font-size: 30px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+
     .info p{
         height: fit-content;
     }
 
+    section #mainMenu{
+        font-size: 24px;
+    }
+
     .grid {
+        padding-left: 55px;
         display: grid;
         grid-template-columns: 300px;
         grid-template-rows: repeat(6, 300px);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
         }
         
         .div1 { grid-area: 1 / 1 / 2 / 2; }
