@@ -4,7 +4,10 @@ const closer = document.querySelector('.closer');
 
 checkout1.addEventListener('click', () =>{
     openable.style.display = "flex";
+    openable.style.position = "fixed";
+
     photo1.style.display = "block";
+    openable.style.transform = `translate(${0}%)`;
 })
 closer.addEventListener('click',()=> {
     openable.style.display = "none";
@@ -33,9 +36,11 @@ const closePage = document.querySelector('.closePage');
 
 checkout2.addEventListener('click', ()=> {
     openable.style.display = "flex";
+    openable.style.position = "fixed";
+    photo1.style.display = "block";
+    openable.style.transform = `translate(${0}%)`;
     document.getElementById('changeModels').src = "./img/models/model-2.png";
     document.getElementById('doorNumber').innerHTML = "Door #N502";
-    photo1.style.display = "block";
 })
 
 closerCheckout.addEventListener('click',()=> {
@@ -50,57 +55,68 @@ closePage.addEventListener('click', () => {
 
 checkout3.addEventListener('click', ()=> {
     openable.style.display = "flex";
+    openable.style.position = "fixed";
     document.getElementById('changeModels').src = "./img/models/model-3.png";
     document.getElementById('doorNumber').innerHTML = "Door #N503";
+    openable.style.transform = `translate(${0}%)`;
     photo1.style.display = "block";
 })
 
 checkout4.addEventListener('click', ()=> {
     openable.style.display = "flex";
+    openable.style.position = "fixed";
     document.getElementById('changeModels').src = "./img/models/model-4.png";
     document.getElementById('doorNumber').innerHTML = "Door #N504";
+    openable.style.transform = `translate(${0}%)`;
     photo1.style.display = "block";
 })
 checkout5.addEventListener('click', ()=> {
     openable.style.display = "flex";
+    openable.style.position = "fixed";
     document.getElementById('changeModels').src = "./img/models/model-5.png";
     document.getElementById('doorNumber').innerHTML = "Door #N505";
-    openable.style.transform = `translateY(${20}vw)`;
+    openable.style.transform = `translate(${0}%)`;
     photo1.style.display = "block";
 })
 checkout6.addEventListener('click', ()=> {
     openable.style.display = "flex";
+    openable.style.position = "fixed";
     document.getElementById('changeModels').src = "./img/models/model-6.png";
     document.getElementById('doorNumber').innerHTML = "Door #N506";
-    openable.style.transform = `translateY(${20}vw)`;
+    openable.style.transform = `translate(${0}%)`;
     photo1.style.display = "block";
 })
 checkout7.addEventListener('click', ()=> {
     openable.style.display = "flex";
+    openable.style.position = "fixed";
     document.getElementById('changeModels').src = "./img/models/model-7.png";
     document.getElementById('doorNumber').innerHTML = "Door #N507";
-    openable.style.transform = `translateY(${20}vw)`;
+    openable.style.transform = `translate(${0}%)`;
     photo1.style.display = "block";
 })
 checkout8.addEventListener('click', ()=> {
     openable.style.display = "flex";
+    openable.style.position = "fixed";
     document.getElementById('changeModels').src = "./img/models/model-8.png";
     document.getElementById('doorNumber').innerHTML = "Door #N508";
-    openable.style.transform = `translateY(${20}vw)`;
+    openable.style.transform = `translate(${0}%)`;
     photo1.style.display = "block";
 })
 checkout9.addEventListener('click', ()=> {
     openable.style.display = "flex";
+    openable.style.position = "fixed";
     document.getElementById('changeModels').src = "./img/models/model-9.png";
     document.getElementById('doorNumber').innerHTML = "Door #N509";
-    openable.style.transform = `translateY(${98}vh)`;
+    openable.style.transform = `translate(${0}%)`;
     photo1.style.display = "block";
 })
 checkout10.addEventListener('click', ()=> {
     openable.style.display = "flex";
+    openable.style.position = "fixed";
+
     document.getElementById('changeModels').src = "./img/models/model-10.png";
     document.getElementById('doorNumber').innerHTML = "Door #N510";
-    openable.style.transform = `translateY(${98}vh)`;
+    openable.style.transform = `translate(${0}%)`;
     photo1.style.display = "block";
 })
 

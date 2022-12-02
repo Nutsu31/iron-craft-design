@@ -22,7 +22,7 @@
         <div class="header-middle smallbar">
             <button id="closer"">Close</button>
             <a href="index.html" class="active">მთავარი</a>
-            <a href="#" id="gallery">გალერეა</a>
+            <!-- <a href="#" id="gallery">გალერეა</a> -->
             <a href="contact.html">კონტაქტი</a>
             <a href="service.html">სერვისი</a>
             <a href="#" class="sales">Sales!</a>
@@ -124,12 +124,31 @@
                 <span></span>
             </div>
 
-            <form action="" class="profile-form">
-            <div class="input">
-            <input type="text" placeholder="შემკვეთის სახელი/გვარი" required>
-            <input type="tel" placeholder="შემკვეთის ტელეფონის ნომერი" required>
-            <input type="text" placeholder="მისამართი მაგ: ქ.თბილის /მირიან მეფის #1" required>
-            <button type="submit" class="button" id="button" onclick="setTimeout(5000)" >შეკვეთა</button>
+
+            <!-- <form
+  action="https://formspree.io/f/mlevyyya"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
+  <button type="submit">Send</button>
+</form> -->
+            <form action="https://formspree.io/f/mlevyyya"
+            method="POST">
+                <div class="input">
+                <input type="email" placeholder="მიუთითეთ თქვენი ემაილი" id="email" required>
+                <input type="text" placeholder="შემკვეთის სახელი/გვარი" id="name" required>
+                <input type="tel" placeholder="შემკვეთის ტელეფონის ნომერი" id="tel" required>
+                <input type="text" placeholder="მისამართი მაგ: ქ.თბილის /მირიან მეფის #1" id="address" required>
+                <!-- <input type="button" value="შეკვეთა" onclick="sendEmail()" class="button" id="button"> -->
+                <button type="submit" class="button" id="button">შეკვეთა</button>
             </div>
         </form>
 
@@ -151,6 +170,8 @@
 <!--  -------------------------Forms -->
 
     <footer></footer>
+    <script src="https://smtpjs.com/v3/smtp.js">
+</script>
     <script src="./js/door.js"></script>
 </body>
 </html>

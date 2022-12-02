@@ -4,7 +4,9 @@ const closer = document.querySelector('.closer');
 
 checkout1.addEventListener('click', () =>{
     openable.style.display = "flex";
+    openable.style.position = "fixed";
     photo1.style.display = "block";
+    openable.style.transform = `translate(${0}%)`;
 })
 closer.addEventListener('click',()=> {
     openable.style.display = "none";
@@ -51,73 +53,85 @@ closePage.addEventListener('click', () => {
 })
 
 checkout3.addEventListener('click', ()=> {
-    openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/tables/table3.jpg";
     document.getElementById('doorNumber').innerHTML = "Door #N1003";
+    openable.style.display = "flex";
+    openable.style.position = "fixed";
     photo1.style.display = "block";
+    openable.style.transform = `translate(${0}%)`;
 })
 
 checkout4.addEventListener('click', ()=> {
-    openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/tables/table4.jpg";
     document.getElementById('doorNumber').innerHTML = "Door #N1004";
+    openable.style.display = "flex";
+    openable.style.position = "fixed";
     photo1.style.display = "block";
+    openable.style.transform = `translate(${0}%)`;
 })
 checkout5.addEventListener('click', ()=> {
-    openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/tables/table5.jpg";
     document.getElementById('doorNumber').innerHTML = "Door #N1005";
-    openable.style.transform = `translateY(${55}vh)`;
+    openable.style.display = "flex";
+    openable.style.position = "fixed";
     photo1.style.display = "block";
+    openable.style.transform = `translate(${0}%)`;
 })
 checkout6.addEventListener('click', ()=> {
-    openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/tables/table6.jpg";
     document.getElementById('doorNumber').innerHTML = "Door #N1006";
-    openable.style.transform = `translateY(${55}vh)`;
+    openable.style.display = "flex";
+    openable.style.position = "fixed";
     photo1.style.display = "block";
+    openable.style.transform = `translate(${0}%)`;
 })
 checkout7.addEventListener('click', ()=> {
-    openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/tables/table7.jpg";
     document.getElementById('doorNumber').innerHTML = "Door #N1007";
-    openable.style.transform = `translateY(${55}vh)`;
+    openable.style.display = "flex";
+    openable.style.position = "fixed";
     photo1.style.display = "block";
+    openable.style.transform = `translate(${0}%)`;
 })
 checkout8.addEventListener('click', ()=> {
-    openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/tables/table8.jpg";
     document.getElementById('doorNumber').innerHTML = "Door #N1008";
-    openable.style.transform = `translateY(${55}vh)`;
+    openable.style.display = "flex";
+    openable.style.position = "fixed";
     photo1.style.display = "block";
+    openable.style.transform = `translate(${0}%)`;
 })
 checkout9.addEventListener('click', ()=> {
-    openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/tables/table9.jpg";
     document.getElementById('doorNumber').innerHTML = "Door #N1009";
-    openable.style.transform = `translateY(${100}vh)`;
+    openable.style.display = "flex";
+    openable.style.position = "fixed";
     photo1.style.display = "block";
+    openable.style.transform = `translate(${0}%)`;
 })
 checkout10.addEventListener('click', ()=> {
-    openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/tables/table10.jpg";
     document.getElementById('doorNumber').innerHTML = "Door #N1010";
-    openable.style.transform = `translateY(${100}vh)`;
+    openable.style.display = "flex";
+    openable.style.position = "fixed";
     photo1.style.display = "block";
+    openable.style.transform = `translate(${0}%)`;
 })
 checkout11.addEventListener('click', ()=> {
-    openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/tables/table11.jpg";
     document.getElementById('doorNumber').innerHTML = "Door #N1011";
-    openable.style.transform = `translateY(${100}vh)`;
+    openable.style.display = "flex";
+    openable.style.position = "fixed";
     photo1.style.display = "block";
+    openable.style.transform = `translate(${0}%)`;
 })
 checkout12.addEventListener('click', ()=> {
-    openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/tables/table12.jpg";
     document.getElementById('doorNumber').innerHTML = "Door #N1012";
-    openable.style.transform = `translateY(${100}vh)`;
+    openable.style.display = "flex";
+    openable.style.position = "fixed";
     photo1.style.display = "block";
+    openable.style.transform = `translate(${0}%)`;
 })
 
 const dropDown = document.querySelector('.dropDown');
