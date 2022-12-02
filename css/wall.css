@@ -122,7 +122,9 @@ header{
 .header-middle .active{
     color: orangered;
 }
-
+.header-middle button{
+    display: none;
+}
 
 
 
@@ -431,8 +433,29 @@ footer{
     .header-right img{
         display: block;
     }
-    .header-middle {
+    .header-middle{
+        width: 200px;
+        height: 690px;
+        padding: 95px 10px;
+        top: 0px;
+        right: 0px;
+        gap: 50px;
+        position: absolute;
         display: none;
+        flex-direction: column;
+        background: #232f3e;
+        z-index: 1;
+    }
+    .header-middle button{
+        color: orangered;
+        font-weight: 300;
+        width: 50px;
+        border-radius: 10px;
+        background: transparent;
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
     }
 
     .space {
@@ -455,10 +478,18 @@ footer{
         letter-spacing:2px;
         display: flex;
         align-items: center;
+        position: relative;
     }
     .dropMenu img{
         width: 15px;
-        margin-left: 10px;
+    }
+
+    .dropMenu .xCloser {
+        font-size: 20px;
+        font-weight: 700;
+        position: absolute;
+        right: 20PX;
+        display: none;
     }
     .container {
         grid-template-columns: 300px 300px;

@@ -119,3 +119,27 @@ checkout12.addEventListener('click', ()=> {
     openable.style.transform = `translateY(${100}vh)`;
     photo1.style.display = "block";
 })
+
+const dropDown = document.querySelector('.dropDown');
+const space = document.querySelector('.space');
+const xCloser = document.querySelector('.xCloser')
+
+dropDown.addEventListener('click', () => {
+    space.style.display = 'flex';
+    xCloser.style.display = 'block'
+});
+
+xCloser.addEventListener('click', () => {
+    space.style.display = 'none';
+    xCloser.style.display = 'none';
+})
+const bar = document.getElementById("bar");
+const headerMiddle = document.querySelector(".header-middle");
+const closeMiniBar = document.getElementById("closer");
+
+bar.addEventListener('click',() =>{
+    headerMiddle.style.display = "flex";
+});
+closeMiniBar.addEventListener('click',() => {
+    headerMiddle.style.display = "none";
+})

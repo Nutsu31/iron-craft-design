@@ -418,6 +418,8 @@ footer{
 
 @media only screen and (max-width:1350px) {
     header .header-left{
+        padding: 0 50px;
+        align-items: center;
         justify-content: center;
     }
     
@@ -428,13 +430,14 @@ footer{
         display: block;
     }
     .header-middle a{
-        padding: 30px ;
+
+        padding: 0px 30px ;
     }
 
     .header-middle{
         width: 200px;
         height: 690px;
-        padding: 45px 30px;
+        padding: 95px 10px;
         top: 0px;
         right: 0px;
         gap: 50px;
@@ -442,6 +445,7 @@ footer{
         display: none;
         flex-direction: column;
         background: #232f3e;
+        z-index: 1;
     }
     .header-middle button{
         color: orangered;

@@ -93,13 +93,37 @@ checkout9.addEventListener('click', ()=> {
     openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/model-9.png";
     document.getElementById('doorNumber').innerHTML = "Door #N509";
-    openable.style.transform = `translateY(${46}vw)`;
+    openable.style.transform = `translateY(${98}vh)`;
     photo1.style.display = "block";
 })
 checkout10.addEventListener('click', ()=> {
     openable.style.display = "flex";
     document.getElementById('changeModels').src = "./img/models/model-10.png";
     document.getElementById('doorNumber').innerHTML = "Door #N510";
-    openable.style.transform = `translateY(${46}vw)`;
+    openable.style.transform = `translateY(${98}vh)`;
     photo1.style.display = "block";
+})
+
+const dropDown = document.querySelector('.dropDown');
+const space = document.querySelector('.space');
+const xCloser = document.querySelector('.xCloser')
+
+dropDown.addEventListener('click', () => {
+    space.style.display = 'flex';
+    xCloser.style.display = 'block'
+});
+
+xCloser.addEventListener('click', () => {
+    space.style.display = 'none';
+    xCloser.style.display = 'none';
+});
+const bar = document.getElementById("bar");
+const headerMiddle = document.querySelector(".header-middle");
+const closeMiniBar = document.getElementById("closer");
+
+bar.addEventListener('click',() =>{
+    headerMiddle.style.display = "flex";
+});
+closeMiniBar.addEventListener('click',() => {
+    headerMiddle.style.display = "none";
 })

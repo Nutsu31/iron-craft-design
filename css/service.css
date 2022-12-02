@@ -113,6 +113,10 @@ header{
 .header-middle .active{
     color: orangered;
 }
+.header-middle button{
+    display: none;
+}
+    
 
 
 
@@ -167,7 +171,7 @@ header{
     height: 75vh;
     padding: 50px 20px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     overflow: hidden;
 
@@ -176,6 +180,7 @@ header{
     width: 400px;
     height: 600px;
     display: flex;
+
     text-align: center;
     flex-direction: column;
     padding: 15px;
@@ -244,7 +249,37 @@ footer{
     .header-middle {
         display: none;
     }
+    .header-middle{
+        width: 200px;
+        height: 690px;
+        padding: 50px 10px;
+        top: 0px;
+        right: 0px;
+        gap: 20px;
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        background: #232f3e;
+    }
+    .header-middle button{
+        color: orangered;
+        font-weight: 300;
+        width: 50px;
+        background: transparent;
+        border-radius: 10px;
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    .header-middle a{
+        font-size: 20px;
+    }
 
+    .header-right{
+        width: 3%;
+        padding: 0;
+    }
     .space {
         display: none;
         padding: 15px 0;
@@ -267,4 +302,5 @@ footer{
         margin: 50px 0;
         border-radius: 0;
     }
+
 }
