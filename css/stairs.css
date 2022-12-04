@@ -516,10 +516,15 @@ footer{
     }
 }
 @media only screen and (max-width: 700px ) {
+    
+    .openable{
+        position: relative;
+    }
     .openable .photo1{
         width: 100%;
         height: 100vh;
-;
+        padding: 30px 50px;
+
         
     }
     .openable .contain{
@@ -527,21 +532,31 @@ footer{
     }
     .openable  .photoInside{
         position: absolute;
-        left: 20%;
+        left: 50%;
         transform: translate(-50%);
+    }
+    .openable   .photoInside img{
+        width: 250px;
+        height: 250px;
     }
     .openable input{
         width: 100%;
         position: relative;
-        top: 250%;
-        left: 55%;
-        transform: translate(-55px);
+        top: 200%;
+        left: 20px;
+    }
+
+    .openable .information{
+        font-size: 16px;
+        width: 200px;
+        display: none;
     }
     .openable #name,
     #email,
     #tel,
     #address{
         width: 270px;
+        height: 30px;
     }
 
     
