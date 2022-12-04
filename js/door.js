@@ -143,3 +143,22 @@ bar.addEventListener('click',() =>{
 closeMiniBar.addEventListener('click',() => {
     headerMiddle.style.display = "none";
 })
+
+function sendEmail() {
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "aleksandrenutsubidze@gmail.com",
+        Password: "B20254A063D1858A57B10B5EC317FEBE13DD",
+        To:"aleksandrenutsubidze@gmail.com",
+        From:document.getElementById('email').ariaValueMax,
+        Subject : "New Message From DaDesign",
+        Body : "Name: " + document.getElementById("name").value
+        + "<br> Email: " + document.getElementById("email").value
+        + "<br> Phone: " + document.getElementById('tel').value
+        + "<br> Addres: " + document.getElementById("address").value
+        + "<br> Model: " + document.getElementById("modelNumber").value 
+    }).then(
+        message => alert("message Sent Succesfully")
+        
+    );
+}

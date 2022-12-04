@@ -110,14 +110,16 @@
                 <span></span>
             </div>
 
-            <form action="" class="profile-form">
-            <div class="input">
-            <input type="text" placeholder="შემკვეთის სახელი/გვარი" required>
-            <input type="tel" placeholder="შემკვეთის ტელეფონის ნომერი" required>
-            <input type="text" placeholder="მისამართი მაგ: ქ.თბილის /მირიან მეფის #1" required>
-            <button type="submit" class="button" id="button">შეკვეთა</button>
-            </div>
-        </form>
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <div class="input">
+                <input type="text" placeholder="შემკვეთის სახელი/გვარი" id="name" required>
+                <input type="email" placeholder="შემკვეთის ელ ფოსტა" id="email" required>
+                <input type="number" placeholder="შემკვეთის ტელეფონის ნომერი" id="tel" required>
+                <input type="text" placeholder="მისამართი მაგ: ქ.თბილის /მირიან მეფის #1" id="address" required>
+                <input type="number" placeholder="მოდელი მაგ:#N501" style="width:120px;" id="modelNumber" required>
+                <button type="submit" class="button" id="button">შეკვეთა</button>
+                </div>
+            </form>
 
             <div class="information">
                 <h2>ყურადღებით!</h2>

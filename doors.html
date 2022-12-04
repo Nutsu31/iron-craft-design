@@ -22,7 +22,7 @@
         <div class="header-middle smallbar">
             <button id="closer"">Close</button>
             <a href="index.html" class="active">მთავარი</a>
-            <!-- <a href="#" id="gallery">გალერეა</a> -->
+            <a href="#" id="gallery">გალერეა</a>
             <a href="contact.html">კონტაქტი</a>
             <a href="service.html">სერვისი</a>
             <a href="#" class="sales">Sales!</a>
@@ -113,7 +113,7 @@
             <div class="photoInside">
             <img src="./img/models/model-1.png" id="changeModels" alt="">
             <h2 id="doorNumber">Door #N501</h2>
-            </div>
+        </div>
 
             <div class="contain">
                 <h2>შემადგენლობა:</h2>
@@ -124,31 +124,14 @@
                 <span></span>
             </div>
 
-
-            <!-- <form
-  action="https://formspree.io/f/mlevyyya"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-
-  <button type="submit">Send</button>
-</form> -->
-            <form action="https://formspree.io/f/mlevyyya"
-            method="POST">
-                <div class="input">
-                <input type="email" placeholder="მიუთითეთ თქვენი ემაილი" id="email" required>
-                <input type="text" placeholder="შემკვეთის სახელი/გვარი" id="name" required>
-                <input type="tel" placeholder="შემკვეთის ტელეფონის ნომერი" id="tel" required>
-                <input type="text" placeholder="მისამართი მაგ: ქ.თბილის /მირიან მეფის #1" id="address" required>
-                <!-- <input type="button" value="შეკვეთა" onclick="sendEmail()" class="button" id="button"> -->
-                <button type="submit" class="button" id="button">შეკვეთა</button>
+            <form onsubmit="sendEmail(); reset(); return false;">
+            <div class="input">
+            <input type="text" placeholder="შემკვეთის სახელი/გვარი" id="name" required>
+            <input type="email" placeholder="შემკვეთის ელ ფოსტა" id="email" required>
+            <input type="number" placeholder="შემკვეთის ტელეფონის ნომერი" id="tel" required>
+            <input type="text" placeholder="მისამართი მაგ: ქ.თბილის /მირიან მეფის #1" id="address" required>
+            <input type="number" placeholder="მოდელი მაგ:#N501" style="width:120px;" id="modelNumber" required>
+            <button type="submit" class="button" id="button">შეკვეთა</button>
             </div>
         </form>
 
@@ -171,7 +154,7 @@
 
     <footer></footer>
     <script src="https://smtpjs.com/v3/smtp.js">
-</script>
+    </script>
     <script src="./js/door.js"></script>
 </body>
 </html>
