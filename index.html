@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="./img/logo.png">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
     <title>Welcome to the DA Design</title>
 </head>
 <body class="light">
     
     <div class="space0">
         <marquee behavior="" direction="right">
-            <i class='bx bx-phone'>+995 599 69 08 08 <span>გელოდებით მირიან მეფის N98</span></i>
+            <i class='bx bx-phone'>+995 599 69 08 08 <span>გელოდებით მირიან მეფის N98</span> საიტი გაშვებულია ბეტა რეჟიმში</i>
         </marquee>
     </div>
     <header>
@@ -22,11 +23,10 @@
         </div>
         <div class="header-middle smallbar">
             <button id="closer"">Close</button>
-            <a href="index.html" class="active">მთავარი</a>
-            <!-- <a href="#" id="gallery">გალერეა</a> -->
-            <a href="contact.html">კონტაქტი</a>
-            <a href="service.html">სერვისი</a>
-            <a href="#" class="sales">Sales!</a>
+            <a href="./index.html" class="active">მთავარი</a>
+            <a href="./contact.html">კონტაქტი</a>
+            <a href="./service.html">სერვისი</a>
+            <a href="./sales.html" class="sales">Sales!</a>
         </div>
 
         <!-- ---------------------------------- -->
@@ -46,7 +46,8 @@
             </div> -->
             <div class="info">
                 <h2>მოგესალმებათ <br> DA Design</h2>
-                <p>კომპანია "DA Design" გთავაზობთ უმაღლესი ხარისხის რკინის ნაკეთობებს, ეს იქნება კარებები,მოაჯირები,ვიტრაჟები , კიბეები, ჭიშკრები თუ უამრავი ინტერიერის სხვა დეტალები.
+                <p>კომპანია "DA Design" გთავაზობთ უმაღლესი ხარისხის რკინის ნაკეთობებს, 
+                    ეს იქნება კარებები,მოაჯირები,ვიტრაჟები , კიბეები, ჭიშკრები თუ უამრავი ინტერიერის სხვა დეტალები.
                 </p>
                 <a href="service.html">დეტალური აღწერა</a>
             </div>
@@ -55,8 +56,13 @@
             </div>
         </div>
     </nav>
-
+    
     <section>
+        <!-- beta  -->
+        <span class="beta" style="color: red; width: 150px; height: 30px;
+        background-color: black;
+        font-size: 20px;"> საიტი გაშვებულია ბეტა რეჟიმში</span>
+
         <h1 id="mainMenu">მთავარი მენიუ</h1>
         <div class="grid">
 
@@ -103,10 +109,38 @@
         </div>
     </div>
     </section>
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
 
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "234055587275529");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v15.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 
     <footer></footer>
-    <script src="http://smtpjs.com/vs/smtp.js"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>

@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/door.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
     <title>კარებები Da Design</title>
 </head>
 <body class="light">
     
     <div class="space0">
         <marquee behavior="" direction="right">
-            <i class='bx bx-phone'>+995 599 69 08 08 <span>გელოდებით მირიან მეფის N#</span></i>
+            <i class='bx bx-phone'>+995 599 69 08 08 <span>გელოდებით მირიან მეფის N98</span></i>
         </marquee>
     </div>
 
@@ -21,11 +23,10 @@
         </div>
         <div class="header-middle smallbar">
             <button id="closer"">Close</button>
-            <a href="index.html" class="active">მთავარი</a>
-            <a href="#" id="gallery">გალერეა</a>
-            <a href="contact.html">კონტაქტი</a>
-            <a href="service.html">სერვისი</a>
-            <a href="#" class="sales">Sales!</a>
+            <a href="./index.html">მთავარი</a>
+            <a href="./contact.html">კონტაქტი</a>
+            <a href="./service.html">სერვისი</a>
+            <a href="./sales.html" class="sales">Sales!</a>
         </div>
 
         <!-- ---------------------------------- -->
@@ -111,7 +112,7 @@
         <div class="photo1">
             <div class="closer">x</div>
             <div class="photoInside">
-            <img src="./img/models/gates/gate1.png" id="changeModels" alt="">
+            <img src="./img/models/model-1.png" id="changeModels" alt="">
             <h2 id="doorNumber">Door #N601</h2>
             </div>
             <div class="contain">
@@ -122,7 +123,7 @@
                 <span>საკეტი</span><br>
                 <span></span>
             </div>
-            <form onsubmit="sendEmail(); reset(); return false;">
+            <form>
                 <div class="input">
                 <input type="text" placeholder="შემკვეთის სახელი/გვარი" id="name" required>
                 <input type="email" placeholder="შემკვეთის ელ ფოსტა" id="email" required>
@@ -149,9 +150,37 @@
     
 <!--  -------------------------Forms -->
 
-    <footer></footer>
-    <script src="https://smtpjs.com/v3/smtp.js">
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "234055587275529");
+      chatbox.setAttribute("attribution", "biz_inbox");
     </script>
+
+<!-- Your SDK code -->
+<script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v15.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <footer></footer>
     <script src="./js/door.js"></script>
 </body>
 </html>

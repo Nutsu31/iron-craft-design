@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/wall.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
     <title>კარებები Da Design</title>
 </head>
 <body class="light">
     
     <div class="space0">
         <marquee behavior="" direction="right">
-            <i class='bx bx-phone'>+995 599 69 08 08 <span>გელოდებით მირიან მეფის N#</span></i>
+            <i class='bx bx-phone'>+995 599 69 08 08 <span>გელოდებით მირიან მეფის N98</span></i>
         </marquee>
     </div>
     
@@ -21,11 +23,10 @@
         </div>
         <div class="header-middle smallbar">
             <button id="closer"">Close</button>
-            <a href="index.html" class="active">მთავარი</a>
-            <!-- <a href="#" id="gallery">გალერეა</a> -->
-            <a href="contact.html">კონტაქტი</a>
-            <a href="service.html">სერვისი</a>
-            <a href="#" class="sales">Sales!</a>
+            <a href="./index.html">მთავარი</a>
+            <a href="./contact.html">კონტაქტი</a>
+            <a href="./service.html">სერვისი</a>
+            <a href="./sales.html" class="sales">Sales!</a>
         </div>
 
         <!-- ---------------------------------- -->
@@ -51,40 +52,16 @@
     
     <div class="container">
         <div class="div1">
-            <img src="./img/models/wall/wall1.jpg" alt="">
-            <h2>Door #N901</h2>
+            <img src="./img/models/grill/grill1.png" alt="">
+            <h2>Grill - მაყალი #N1101</h2>
             <button class="checkout1">შეკვეთა</button>
         </div>
         <div class="div2">
-            <img src="./img/models/wall/wall2.jpg" alt="">
-            <h2>Door #N902</h2>
+            <img src="./img/models/grill/grill2.png" alt="">
+            <h2>Grill - მაყალი #N1102</h2>
             <button class="checkout2">შეკვეთა</button>
         </div>
-        <div class="div3">
-            <img src="./img/models/wall/wall3.jpg" alt="">
-            <h2>Door #N903</h2>
-            <button class="checkout3">შეკვეთა</button>
-        </div>
-        <div class="div4">
-            <img src="./img/models/wall/wall5.jpg" alt="">
-            <h2>Door #N904</h2>
-            <button class="checkout4">შეკვეთა</button>
-        </div>
-        <div class="div5">
-            <img src="./img/models/wall/wall6.jpg" alt="">
-            <h2>Door #N905</h2>
-            <button class="checkout5">შეკვეთა</button>
-        </div>
-        <div class="div6">
-            <img src="./img/models/wall/wall7.jpg" alt="">
-            <h2>Door #N906</h2>
-            <button class="checkout6">შეკვეთა</button>
-        </div>
-        <div class="div7">
-            <img src="./img/models/wall/wall8.jpg" alt="">
-            <h2>Door #N907</h2>
-            <button class="checkout7">შეკვეთა</button>
-        </div>
+
     </div>
     
     
@@ -96,20 +73,19 @@
         <div class="photo1">
             <div class="closer">x</div>
             <div class="photoInside">
-            <img src="./img/models/model-1.png" id="changeModels" alt="">
-            <h2 id="doorNumber">Door #N501</h2>
+            <img src="./img/models/grill/grill1.png" id="changeModels" alt="">
+            <h2 id="doorNumber">Grill #N1101</h2>
             </div>
 
             <div class="contain">
                 <h2>შემადგენლობა:</h2>
                 <span>ლისტი</span><br>
-                <span>პენოპლასტი</span><br>
-                <span>სახელური</span><br>
-                <span>საკეტი</span><br>
+                <span>ტრუბაკვადრატი</span>
+                <span>ტრუბაკვადრატი</span>
                 <span></span>
             </div>
 
-            <form onsubmit="sendEmail(); reset(); return false;">
+            <form>
                 <div class="input">
                 <input type="text" placeholder="შემკვეთის სახელი/გვარი" id="name" required>
                 <input type="email" placeholder="შემკვეთის ელ ფოსტა" id="email" required>
@@ -136,9 +112,38 @@
     </div>
     
 <!--  -------------------------Forms -->
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
 
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "234055587275529");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v15.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
     <footer></footer>
 
-    <script src="./js/stairs.js"></script>
+    <script src="./js/grill.js"></script>
 </body>
 </html>
